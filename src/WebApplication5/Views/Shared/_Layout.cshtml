@@ -1,0 +1,26 @@
+﻿<!doctype html>
+<html ng-app="customersApp">
+<head>
+    <title>Iterating Over Data</title>
+    <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div id="mainMenu">
+        <a href="#/">Home</a>
+        <a href="#/contact/">Contact</a>
+    </div>
+
+    <div ng-view></div>
+    @RenderBody()
+    <script src="~/lib/scripts/angular.js"></script>
+    <script src="~/lib/scripts/angular-route.js"></script>
+    <script src="~/lib/app/app.js"></script>
+    <script src="~/lib/app/controllers/customersController.js"></script>
+    <script src="~/lib/app/controllers/ordersController.js"></script>
+    <script src="~/lib/app/controllers/contactController.js"></script>
+    <script src="~/lib/app/services/customersService.js"></script>
+    <script src="~/lib/app/services/customersFactory.js"></script>
+    <script src="~/lib/app/services/contactService.js"></script>
+    <script src="~/lib/app/services/values.js"></script>
+</body>
+</html>
